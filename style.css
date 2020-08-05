@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap');
+
+
+body {
+  margin: 0px;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+img {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main h2 {
+  font-size: 28px;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
+}
+
+main h3 {
+  font-size: 22px;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
+}
+
+main p {
+  font-family: 'Libre Franklin', sans-serif;
+  line-height: 1.5em;
+ margin-bottom: 0em;
+}
+
+p.ind {
+  text-indent: 25px;
+}
+
+/* Header */
+
+header {
+  background-color: #6C464E;
+  margin-bottom: 20px;
+  display: block;
+}
+
+header h1 {
+  color: #F1FFE7;
+  text-align: center;
+  margin: 0px;
+  padding: 20px 0;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 56px;
+}
+
+/* Main */
+
+main .wrapper h2 {
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+main .intro {
+  font-size: 24px;
+  padding-left: 10px;
+}
+
+
+/* Groups and Items (Mobile First) */
+.wrapper {
+  width: 80%;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 20px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+/*  Groups and Items (Desktop)  */
+
+@media all and (min-width 500px) {
+  .wrapper {
+    width: 80%;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}
+
+#home, #portfolio, #contact {
+  margin-bottom: 120px;
+}
+
+
+
+#about {
+  background-color: #F1FFE7;
+  padding: 20px 0 30px 0;
+  margin: 120px 0;
+}
